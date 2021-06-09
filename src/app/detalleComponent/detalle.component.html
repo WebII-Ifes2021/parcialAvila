@@ -1,0 +1,54 @@
+<h3><p class="texto-detalle">PARCIAL 1 DE PROGRAMACION WEB</p></h3>
+<br>
+
+
+<form [formGroup]="ventaForm" name="ventaForm">
+   <!-- <mat-form-field appearance="legacy">
+        <mat-label>Valor que aparece en debbuger</mat-label>
+        <input formControlName="valorBtn" matInput placeholder="valorBtr">
+    </mat-form-field>-->
+    <br>
+
+    <mat-form-field appearance="legacy">
+        <mat-label>Nombre</mat-label>
+        <input formControlName="nombre" matInput placeholder="Nombre De producto">
+    </mat-form-field> 
+    <br>
+
+    <mat-form-field appearance="legacy">
+        <mat-label>Producto</mat-label>
+        <input formControlName="producto" matInput placeholder="Producto">
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="legacy">
+        <mat-label>Fecha de Compra</mat-label>
+        <input formControlName="fechaCompra" matInput placeholder="Fecha de Compra">
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="legacy">
+        <mat-label>Cantidad</mat-label>
+        <input formControlName="cantidad" matInput placeholder="Cantidad">
+    </mat-form-field> 
+    <br>
+
+    <mat-form-field appearance="legacy">
+        <mat-label>Precio</mat-label>
+        <input formControlName="precio" matInput placeholder="Precio">
+    </mat-form-field> 
+    <br>
+
+</form>
+
+<!--Precio RECARGO : {{PorcentajeFinal}}
+
+-->
+
+
+<p>
+    <button mat-button (click)="setComponenteVenta()" color="primary">Guardar</button>
+<br>    
+</p>
+
+<app-venta [componenteVenta]='componenteDetalle'></app-venta>
